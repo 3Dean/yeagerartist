@@ -14,7 +14,7 @@ const __dirname = dirname(__filename);
 export default defineConfig({
   output: 'static',
   outDir: 'dist',
-  prerender: { onError: 'continue' },
+  prerender: { onError: 'continue', entries: ['*', '!/api/*'] },
   // site: 'https://astro-ink.vercel.app',
   markdown: {
     syntaxHighlight: 'shiki',
