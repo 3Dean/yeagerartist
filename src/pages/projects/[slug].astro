@@ -1,5 +1,9 @@
 ---
 import { projects } from "../../data/projects.js";
+
+export async function getStaticPaths() {
+  return projects.map((p) => ({ params: { slug: p.slug } }));
+}
 import DefaultPageLayout from "$/layouts/default.astro";
 import { Image } from "astro:assets";
 import LightGalleryWrapper from "$/components/LightGalleryWrapper.svelte";

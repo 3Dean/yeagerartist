@@ -14,11 +14,10 @@
       "checkJs": true,
       "baseUrl": ".",
       "paths": {
-        "$/*": ["src/*"],
-        "$components/*": ["src/components/*"]
-    },
+        "$/*": ["src/*"]
+      },
       "types": ["astro/env"],
       "strictNullChecks": true
     },
-    "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/pages/rss.xml.js"],
+    "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte", "src/**/*.astro", "src/pages/rss.xml.js"],
 }
