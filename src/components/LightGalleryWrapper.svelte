@@ -16,8 +16,10 @@
     const { default: lgZoom } = await import("lightgallery/plugins/zoom");
     const { default: lgVideo } = await import("lightgallery/plugins/video");
 
-    // dynamically load CSS
+    // dynamically load core and plugin CSS including controls and icons
     await import("lightgallery/css/lightgallery.css");
+    await import("lightgallery/css/lg-transitions.css");
+    await import("lightgallery/css/lg-fullscreen.css");
     await import("lightgallery/css/lg-thumbnail.css");
     await import("lightgallery/css/lg-zoom.css");
     await import("lightgallery/css/lg-video.css");
