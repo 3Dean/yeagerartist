@@ -26,6 +26,7 @@
 
       lightGallery(galleryEl, {
         plugins: [lgThumbnail, lgZoom, lgVideo],
+        download: false,
         speed: 500,
         thumbnail: true,
         zoom: true,
