@@ -24,3 +24,8 @@ netlify
 .astro
 .idea
 .vercel
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*
