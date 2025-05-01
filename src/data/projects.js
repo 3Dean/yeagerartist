@@ -163,7 +163,7 @@ export const projects = [
       description: 'A self-promotion demo reel.',
       thumbnail: '/images/projects/demo-reel-thumb.jpg',
       gallery: [
-        '/images/projects/demo-reel-1.jpg',
+        { src: 'https://vimeo.com/194894241', poster: '/images/projects/demo-reel-thumb.jpg' },
       ]
     },
     {
