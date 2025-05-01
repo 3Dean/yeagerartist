@@ -3,7 +3,8 @@ backend:
   phases:
     build:
       commands:
-        - amplifyPush --simple --env prod
+        - cd amplify
+        - npx @aws-amplify/backend-cli@latest push --simple --envName prod
 frontend:
   phases:
     preBuild:
