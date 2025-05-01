@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "dist": "npm run build",
     "check": "astro check",
     "postbuild": "node ./scripts/search/prepare-index.js",
     "preview": "astro preview",
