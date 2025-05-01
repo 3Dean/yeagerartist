@@ -7,8 +7,6 @@ import mdx from '@astrojs/mdx';
 import { defineConfig } from "astro/config";
 import markdoc from "@astrojs/markdoc";
 import remarkCodeTitles from 'remark-code-titles';
-import decapCmsOauth from "astro-decap-cms-oauth";
-import staticAdapter from '@astrojs/static';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -16,6 +14,7 @@ const __dirname = dirname(__filename);
 export default defineConfig({
   output: 'static',
   outDir: 'dist',
+  prerender: { onError: 'continue' },
   // site: 'https://astro-ink.vercel.app',
   markdown: {
     syntaxHighlight: 'shiki',
@@ -28,7 +27,6 @@ export default defineConfig({
     svelte(),
     tailwind({ applyBaseStyles: false }),
     sitemap(),
-    decapCmsOauth(),
   ],
   vite: {
     resolve: {
@@ -36,5 +34,4 @@ export default defineConfig({
     },
     optimizeDeps: { allowNodeBuiltins: true },
   },
-  adapter: staticAdapter(),
 });
