@@ -1,6 +1,6 @@
 # YeagerArtist Portfolio Website
 
-Welcome to the YeagerArtist Portfolio Website, a modern, responsive portfolio built with Astro and TailwindCSS. This site showcases the immersive 3D environments, visual design projects, and interactive experiences created by Dean Yeager and Chat-GPT.
+Welcome to the YeagerArtist Portfolio Website, a modern, responsive portfolio built with Astro and TailwindCSS. This site showcases the immersive 3D environments, visual design projects, and interactive experiences created by Dean Yeager with Chat-GPT.
 
 ## Features
 
