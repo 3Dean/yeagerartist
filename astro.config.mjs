@@ -33,5 +33,13 @@ export default defineConfig({
       alias: { $: path.resolve(__dirname, './src') },
     },
     optimizeDeps: { allowNodeBuiltins: true },
+    ssr: {
+      noExternal: [
+        'lightgallery',
+        'lightgallery/plugins/thumbnail',
+        'lightgallery/plugins/zoom',
+        'lightgallery/plugins/video'
+      ]
+    },
   },
 });

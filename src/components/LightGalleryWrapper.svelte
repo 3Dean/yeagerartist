@@ -1,31 +1,35 @@
 <script>
   import { onMount } from "svelte";
-  import lightGallery from "lightgallery";
-  import lgThumbnail from "lightgallery/plugins/thumbnail";
-  import lgZoom from "lightgallery/plugins/zoom";
-  import lgVideo from "lightgallery/plugins/video";
-
-  import "lightgallery/css/lightgallery.css";
-  import "lightgallery/css/lg-thumbnail.css";
-  import "lightgallery/css/lg-zoom.css";
-  import "lightgallery/css/lg-video.css";
 
   export let images = [];
   export let title = "";
 
   let galleryEl;
 
-  onMount(() => {
-    if (galleryEl && !galleryEl.classList.contains("lg-initialized")) {
+  onMount(async () => {
+    if (typeof window === "undefined" || !galleryEl || galleryEl.classList.contains("lg-initialized")) {
+      return;
+    }
+
+    const { default: lightGallery } = await import("lightgallery");
+    const { default: lgThumbnail } = await import("lightgallery/plugins/thumbnail");
+    const { default: lgZoom } = await import("lightgallery/plugins/zoom");
+    const { default: lgVideo } = await import("lightgallery/plugins/video");
+
+    // dynamically load CSS
+    await import("lightgallery/css/lightgallery.css");
+    await import("lightgallery/css/lg-thumbnail.css");
+    await import("lightgallery/css/lg-zoom.css");
+    await import("lightgallery/css/lg-video.css");
+
       lightGallery(galleryEl, {
         plugins: [lgThumbnail, lgZoom, lgVideo],
         speed: 500,
         thumbnail: true,
         zoom: true,
-        youtubePlayerParams: { modestbranding: 1, rel: 0 },
+        youTubePlayerParams: { modestbranding: 1, rel: 0 },
         vimeoPlayerParams: { byline: 0, portrait: 0 },
       });
-    }
   });
 </script>
 
@@ -36,7 +40,6 @@
 >
   {#each images as item, index}
     {#if typeof item === "string"}
-      <!-- Image slide -->
       <a href={item} class="block overflow-hidden rounded-lg shadow-lg">
         <div class="relative h-48 overflow-y-scroll">
           <img
@@ -48,7 +51,6 @@
         </div>
       </a>
     {:else}
-      <!-- Video slide -->
       <a
         href={item.src}
         data-poster={item.poster}
