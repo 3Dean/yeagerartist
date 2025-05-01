@@ -1,4 +1,12 @@
 version: 1
+backend:
+  phases:
+    preBuild:
+      commands:
+        - export AMPLIFY_ENV=prod
+    build:
+      commands:
+        - amplifyPush --simple
 frontend:
   phases:
     preBuild:

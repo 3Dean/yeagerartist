@@ -5,53 +5,36 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import { defineConfig } from "astro/config";
-import vercel from "@astrojs/vercel/serverless";
 import markdoc from "@astrojs/markdoc";
+import remarkCodeTitles from 'remark-code-titles';
+import decapCmsOauth from "astro-decap-cms-oauth";
+import staticAdapter from '@astrojs/static';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-import remarkCodeTitles from 'remark-code-titles'
-import decapCmsOauth from "astro-decap-cms-oauth";
 
-// Full Astro Configuration API Documentation:
-// https://docs.astro.build/reference/configuration-reference
-
-// https://astro.build/config
-export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
-  output: 'server',
+export default defineConfig({
+  output: 'static',
   outDir: 'dist',
-  site: 'https://astro-ink.vercel.app', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
-  server: {
-    // port: 4321, // The port to run the dev server on.
-  },
+  // site: 'https://astro-ink.vercel.app',
   markdown: {
     syntaxHighlight: 'shiki',
-    shikiConfig: {
-      theme: 'css-variables',
-    },
-    remarkPlugins: [
-      remarkCodeTitles
-    ]
+    shikiConfig: { theme: 'css-variables' },
+    remarkPlugins: [remarkCodeTitles],
   },
   integrations: [
-    mdx(), 
+    mdx(),
     markdoc(),
-    svelte(), 
-    tailwind({
-      applyBaseStyles: false,
-    }), 
+    svelte(),
+    tailwind({ applyBaseStyles: false }),
     sitemap(),
-    decapCmsOauth()
+    decapCmsOauth(),
   ],
   vite: {
-    plugins: [],
     resolve: {
-      alias: {
-        $: path.resolve(__dirname, './src')
-      }
+      alias: { $: path.resolve(__dirname, './src') },
     },
-    optimizeDeps: {
-      allowNodeBuiltins: true
-    }
+    optimizeDeps: { allowNodeBuiltins: true },
   },
-  adapter: vercel()
+  adapter: staticAdapter(),
 });
