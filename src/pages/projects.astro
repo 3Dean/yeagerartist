@@ -1,0 +1,18 @@
+---
+import DefaultPageLayout from "$/layouts/default.astro";
+import ProjectFilter from "$/components/ProjectFilter.svelte";
+import { projects } from "$/data/projects.js"; // make sure this path matches your project
+---
+
+<DefaultPageLayout
+  content={{
+    title: "Projects",
+    description:
+      "A selection of recent design and animation projects by Dean Yeager.",
+  }}
+>
+  <section x-data="{ filter: 'All' }" class="projects px-4 py-10">
+    <!-- Filtering -->
+    <ProjectFilter client:load {projects} />
+  </section>
+</DefaultPageLayout>

@@ -1,0 +1,32 @@
+---
+title: "About"
+description: "Crafting visual journeys that move people and elevate brands."
+---
+
+import DefaultPageLayout from "$/layouts/default.astro";
+import Prose from "$/components/Prose.astro";
+
+<DefaultPageLayout content={{ title: frontmatter.title, description: frontmatter.description }}>
+    <Prose>
+<div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+  <img
+    src="/images/standing.svg"
+    alt="Dean Yeager illustration"
+    class="w-48 h-auto md:w-64"
+  />
+
+  <div class="prose max-w-none">
+
+    Hi, I’m Dean Yeager — a creative force driven by curiosity, craftsmanship, and a love for immersive visual storytelling.
+
+    - 3D Worldbuilding & Animation
+    - Motion Graphics & Design
+    - Immersive Digital Experiences
+
+    Let's create something unforgettable.
+
+  </div>
+</div>
+
+  </Prose>
+  </DefaultPageLayout>

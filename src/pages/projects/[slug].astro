@@ -1,0 +1,52 @@
+---
+import { projects } from "../../data/projects.js";
+import DefaultPageLayout from "$/layouts/default.astro";
+import { Image } from "astro:assets";
+import LightGalleryWrapper from "$/components/LightGalleryWrapper.svelte";
+
+// Identify the current project based on the URL slug
+const { slug } = Astro.params;
+const project = projects.find((p) => p.slug === slug);
+
+if (!project) {
+  throw new Error(`Project not found for slug: ${slug}`);
+}
+---
+
+<DefaultPageLayout
+  content={{
+    title: project.title,
+    description: project.description,
+  }}
+  showPageHeader={false}
+>
+  <section class="px-4 py-12 max-w-5xl mx-auto">
+    <h1 class="text-4xl font-bold mb-4">{project.title}</h1>
+    <p class="text-xl text-gray-500 mb-8">{project.type}</p>
+
+    <!-- LightGallery container -->
+    <LightGalleryWrapper
+      images={project.gallery}
+      title={project.title}
+      client:load
+    />
+  </section>
+
+  <!-- <section class="px-4 py-12 max-w-3xl mx-auto"> -->
+  <!-- <h2 class="text-3xl font-bold mb-6">About the Project</h2>
+    <p class="text-base md:text-lg">{project.description}</p> -->
+  <!-- </section> -->
+
+  <style>
+    .overflow-y-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    .overflow-y-scroll::-webkit-scrollbar-thumb {
+      background: #999;
+      border-radius: 3px;
+    }
+    .overflow-y-scroll::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  </style>
+</DefaultPageLayout>

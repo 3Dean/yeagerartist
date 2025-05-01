@@ -1,0 +1,54 @@
+---
+export const prerender = true;
+
+import DefaultPageLayout from "$/layouts/default.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<Hero />
+
+<DefaultPageLayout
+  content={{
+    title: "Designer, Animator, and Illustrator",
+    description:
+      "Designer, Animator, and Illustrator blending creativity with strategic design to inspire and engage audiences.",
+  }}
+  showPageHeader={false}
+>
+  <div class="hero">
+    <div class="hero__face">
+      <div class="author-card">
+        <img src="/images/lineart.svg" alt="Dean Yeager" title="Dean Yeager" />
+      </div>
+    </div>
+    <div class="hero__says">
+      <h1 class="text-2xl md:text-4xl font-semibold mb-4 text-theme-primary">
+        Hello &#38; Welcome&#33;
+      </h1>
+      <p class="text-base md:text-lg text-theme-secondary">
+        I'm Dean Yeager, a passionate designer and visual storyteller. My work
+        is driven by a love for creativity, innovation, and crafting experiences
+        that leave a lasting impact. Thanks for visiting &#8212; let's create
+        something extraordinary.
+      </p>
+    </div>
+  </div>
+</DefaultPageLayout>
+
+<style>
+  .hero {
+    @apply flex flex-col md:flex-row gap-8 w-full transition-all pb-4;
+  }
+  .hero__face {
+    @apply flex md:flex-none justify-center;
+  }
+  .hero__says {
+    @apply flex-1 text-center md:text-left;
+  }
+  .author-card {
+    @apply h-48 w-48 md:h-56 bg-theme-primary dark:bg-theme-dark-primary rounded-full md:rounded-md shadow-lg;
+  }
+  .author-card img {
+    @apply rounded-full h-48 w-48 md:h-56;
+  }
+</style>
