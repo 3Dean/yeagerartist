@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
-  output: 'hybrid',
+  output: 'static',
   outDir: 'dist',
   prerender: { onError: 'continue', entries: ['*', '!/api/*'] },
   // site: 'https://astro-ink.vercel.app',
@@ -33,15 +33,20 @@ export default defineConfig({
     resolve: {
       alias: { $: path.resolve(__dirname, './src') },
     },
-    optimizeDeps: { allowNodeBuiltins: true },
+    optimizeDeps: {
+      include: [
+        'lightgallery',
+        'lightgallery/plugins/zoom',
+        'lightgallery/plugins/thumbnail',
+      ],
+    },
     ssr: {
       noExternal: [
         'lightgallery',
-        'lightgallery/plugins/thumbnail',
         'lightgallery/plugins/zoom',
-        'lightgallery/plugins/video'
-      ]
+        'lightgallery/plugins/thumbnail',
+      ],
     },
   },
-  adapter: vercel(),
+  // adapter: vercel(),
 });
