@@ -10,15 +10,15 @@ import markdoc from "@astrojs/markdoc";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 import remarkCodeTitles from 'remark-code-titles'
-import decapCmsOauth from "astro-decap-cms-oauth";
+// Temporarily remove the OAuth integration that's causing the issue
+// import decapCmsOauth from "astro-decap-cms-oauth";
 
 // Full Astro Configuration API Documentation:
 // https://docs.astro.build/reference/configuration-reference
 
 // https://astro.build/config
 export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
-  // Change from 'server' to 'hybrid' for better Amplify compatibility
-  // This allows static generation for most pages but still enables server-rendered pages when needed
+  // Using hybrid output mode for better Amplify compatibility
   output: 'hybrid',
   site: 'https://astro-ink.vercel.app', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
   server: {
@@ -41,7 +41,7 @@ export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
       applyBaseStyles: false,
     }), 
     sitemap(),
-    decapCmsOauth()
+    // Remove decapCmsOauth() temporarily
   ],
   vite: {
     plugins: [],
@@ -57,11 +57,6 @@ export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
     css: {
       postcss: {
         plugins: []
-      },
-      preprocessorOptions: {
-        scss: {
-          additionalData: ''
-        }
       }
     }
   },
