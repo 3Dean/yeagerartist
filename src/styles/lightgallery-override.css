@@ -1,0 +1,64 @@
+/* Create a new CSS file to be included in your project */
+/* src/styles/lightgallery-override.css */
+
+/* Force LightGallery icons to display correctly */
+.lg-toolbar .lg-icon,
+.lg-actions .lg-next, 
+.lg-actions .lg-prev {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+.lg-outer .lg-thumb-outer {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.lg-toolbar {
+  background-color: rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Ensure the icon font styles are applied */
+.lg-icon {
+  font-family: 'lg' !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1 !important;
+  display: inline-block !important;
+}
+
+/* Icon-specific fixes */
+.lg-actions .lg-next:before {
+  content: "\e095" !important;
+}
+
+.lg-actions .lg-prev:after {
+  content: "\e094" !important;
+}
+
+.lg-toolbar .lg-close:after {
+  content: "\e070" !important;
+}
+
+.lg-toolbar .lg-zoom-in:after {
+  content: "\e311" !important;
+}
+
+.lg-toolbar .lg-zoom-out:after {
+  content: "\e312" !important;
+}
+
+/* Fix for thumbnails */
+.lg-outer .lg-thumb {
+  padding: 5px 0 !important;
+}
+
+.lg-outer .lg-thumb-item {
+  border-radius: 4px !important;
+}
+
+/* Fix for backdrop */
+.lg-backdrop {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}

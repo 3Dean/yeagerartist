@@ -5,41 +5,65 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import { defineConfig } from "astro/config";
+import vercel from "@astrojs/vercel/serverless";
 import markdoc from "@astrojs/markdoc";
-import remarkCodeTitles from 'remark-code-titles';
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+import remarkCodeTitles from 'remark-code-titles'
+import decapCmsOauth from "astro-decap-cms-oauth";
 
-export default defineConfig({
-  output: 'static',
-  outDir: 'dist',
-  prerender: { onError: 'continue', entries: ['*', '!/api/*'] },
-  // site: 'https://astro-ink.vercel.app',
+// Full Astro Configuration API Documentation:
+// https://docs.astro.build/reference/configuration-reference
+
+// https://astro.build/config
+export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
+  // Change from 'server' to 'hybrid' for better Amplify compatibility
+  // This allows static generation for most pages but still enables server-rendered pages when needed
+  output: 'hybrid',
+  site: 'https://astro-ink.vercel.app', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+  server: {
+    // port: 4321, // The port to run the dev server on.
+  },
   markdown: {
     syntaxHighlight: 'shiki',
-    shikiConfig: { theme: 'css-variables' },
-    remarkPlugins: [remarkCodeTitles],
+    shikiConfig: {
+      theme: 'css-variables',
+    },
+    remarkPlugins: [
+      remarkCodeTitles
+    ]
   },
   integrations: [
-    mdx(),
+    mdx(), 
     markdoc(),
-    svelte(),
-    tailwind({ applyBaseStyles: false }),
+    svelte(), 
+    tailwind({
+      applyBaseStyles: false,
+    }), 
     sitemap(),
+    decapCmsOauth()
   ],
   vite: {
+    plugins: [],
     resolve: {
-      alias: { $: path.resolve(__dirname, './src') },
+      alias: {
+        $: path.resolve(__dirname, './src')
+      }
     },
-    optimizeDeps: { allowNodeBuiltins: true },
-    ssr: {
-      noExternal: [
-        'lightgallery',
-        'lightgallery/plugins/thumbnail',
-        'lightgallery/plugins/zoom',
-        'lightgallery/plugins/video'
-      ]
+    optimizeDeps: {
+      allowNodeBuiltins: true
     },
+    // Add explicit CSS handling for lightgallery
+    css: {
+      postcss: {
+        plugins: []
+      },
+      preprocessorOptions: {
+        scss: {
+          additionalData: ''
+        }
+      }
+    }
   },
+  adapter: vercel()
 });
