@@ -1,3 +1,13 @@
+<script context="module">
+  // Static import of LightGallery CSS for icons/arrows on initial load
+  import "lightgallery/css/lightgallery-bundle.css";
+  import "lightgallery/css/lg-transitions.css";
+  import "lightgallery/css/lg-fullscreen.css";
+  import "lightgallery/css/lg-thumbnail.css";
+  import "lightgallery/css/lg-zoom.css";
+  import "lightgallery/css/lg-video.css";
+</script>
+
 <script>
   import { onMount } from "svelte";
 
@@ -11,28 +21,26 @@
       return;
     }
 
-    const { default: lightGallery } = await import("lightgallery");
-    const { default: lgThumbnail } = await import("lightgallery/plugins/thumbnail");
-    const { default: lgZoom } = await import("lightgallery/plugins/zoom");
-    const { default: lgVideo } = await import("lightgallery/plugins/video");
+    const [lg, thumbnail, zoom, video] = await Promise.all([
+      import("lightgallery"),
+      import("lightgallery/plugins/thumbnail"),
+      import("lightgallery/plugins/zoom"),
+      import("lightgallery/plugins/video"),
+    ]);
+    const lightGallery = lg.default;
+    const lgThumbnail = thumbnail.default;
+    const lgZoom = zoom.default;
+    const lgVideo = video.default;
 
-    // dynamically load core and plugin CSS including controls and icons
-    await import("lightgallery/css/lightgallery.css");
-    await import("lightgallery/css/lg-transitions.css");
-    await import("lightgallery/css/lg-fullscreen.css");
-    await import("lightgallery/css/lg-thumbnail.css");
-    await import("lightgallery/css/lg-zoom.css");
-    await import("lightgallery/css/lg-video.css");
-
-      lightGallery(galleryEl, {
-        plugins: [lgThumbnail, lgZoom, lgVideo],
-        download: false,
-        speed: 500,
-        thumbnail: true,
-        zoom: true,
-        youTubePlayerParams: { modestbranding: 1, rel: 0 },
-        vimeoPlayerParams: { byline: 0, portrait: 0 },
-      });
+    lightGallery(galleryEl, {
+      plugins: [lgThumbnail, lgZoom, lgVideo],
+      download: false,
+      speed: 500,
+      thumbnail: true,
+      zoom: true,
+      youTubePlayerParams: { modestbranding: 1, rel: 0 },
+      vimeoPlayerParams: { byline: 0, portrait: 0 },
+    });
   });
 </script>
 
