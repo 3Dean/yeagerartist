@@ -4,8 +4,8 @@ const config = require('./tailwind.theme.config.cjs')
 /**
  * Find the applicable theme color palette, or use the default one
  */
-const themeConfig = process.env.THEME_KEY && config[process.env.THEME_KEY] ? config[process.env.THEME_KEY] : config.default
-const { colors } = themeConfig
+const themeConfig = process.env.THEME_KEY && config[process.env.THEME_KEY] ? config[process.env.THEME_KEY] : config.default;
+const { colors } = themeConfig;
 console.log("🐣 Loaded THEME_KEY:", process.env.THEME_KEY);
 module.exports = {
     darkMode: 'class',

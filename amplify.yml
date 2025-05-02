@@ -1,4 +1,7 @@
 version: 1
+env:
+  variables:
+    THEME_KEY: orangecity
 frontend:
   phases:
     preBuild:
@@ -11,3 +14,6 @@ frontend:
     baseDirectory: dist
     files:
       - "**/*"
+cache:
+  paths:
+    - node_modules/**/*
