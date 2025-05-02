@@ -1,5 +1,4 @@
-@import "lightgallery/css/lightgallery-bundle.min.css";
-
+@import "lightgallery/css/lightgallery-bundle.css";
 @tailwind base;
 /* https://github.com/tailwindlabs/tailwindcss/discussions/2917 */
 @layer base {

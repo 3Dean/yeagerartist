@@ -29,11 +29,7 @@ if (!project) {
     <p class="text-xl text-gray-500 mb-8">{project.type}</p>
 
     <!-- LightGallery container -->
-    <LightGalleryWrapper
-      images={project.gallery}
-      title={project.title}
-      client:load
-    />
+    <LightGalleryWrapper client:load images={project.gallery} />
   </section>
 
   <!-- <section class="px-4 py-12 max-w-3xl mx-auto"> -->
