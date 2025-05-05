@@ -51,10 +51,14 @@ The generated files will be placed in the `dist/` directory.
 
 ## Deployment
 
-This site can be deployed to any static hosting provider. Common options:
+This site can be deployed to any static hosting provider.
+```bash
+npm run deploy
+# or
+yarn deploy
+```
+The generated files will be deployed to AWS.
 
-- **Netlify**: Connect your Git repo and deploy with a single click
-- **Vercel**: Simple Git-based deployment, with support for Astro
 - **AWS S3 + CloudFront**: Upload the `dist/` folder to an S3 bucket and serve via CloudFront
 - **GitHub Pages**: Push the `dist/` contents to the `gh-pages` branch
 

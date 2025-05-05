@@ -229,7 +229,7 @@ export const projects = [
     {
       slug: 'riverscape-3D',
       title: 'Riverscape 3D',
-      category: '3D Animation',
+      category: 'Three.js Animation',
       type: '3D Animation',
       description: 'A self-promotional real-time 3D animation.',
       url: 'https://riverscape.glitch.me/',
@@ -241,7 +241,7 @@ export const projects = [
     {
       slug: 'planetx-3D',
       title: 'Escape from Planet X 3D',
-      category: '3D Animation',
+      category: 'Three.js Animation',
       type: '3D Animation',
       description: 'A self-promotional real-time 3D animation.',
       url: 'https://escape-planetx.glitch.me/',
