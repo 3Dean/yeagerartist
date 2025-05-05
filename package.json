@@ -13,7 +13,9 @@
     "check:type": "tsc --project tsconfig.json --pretty --noEmit",
     "lint": "biome lint src",
     "format": "biome format src --write",
-    "cz": "cz"
+    "cz": "cz",
+    "deploy": "npm run build && aws s3 sync ./dist s3://yeagerartist/ --delete && aws cloudfront create-invalidation --distribution-id E9L1YNIZMQXZS --paths \"/*\""
+
   },
   "devDependencies": {
     "@astrojs/mdx": "^2.0.0",

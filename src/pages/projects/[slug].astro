@@ -13,18 +13,43 @@ export function getStaticPaths() {
 }
 
 // Get the project from props passed via getStaticPaths
-const { project } = Astro.props;
+const { project } = Astro.props as { project: (typeof projects)[number] };
 
 // Fallback safety check (shouldn't be needed with getStaticPaths)
 if (!project) {
   throw new Error(`Project not found`);
 }
+
+const items = project.gallery.map((g) => {
+  if (typeof g === "string") {
+    return { src: g, thumb: g };
+  }
+  const vimeoId = g.src.split("/").pop();
+  return {
+    src: `https://player.vimeo.com/video/${vimeoId}`,
+    thumb: g.poster,
+    video: {
+      source: [
+        {
+          src: `https://player.vimeo.com/video/${vimeoId}`,
+          type: "text/html",
+        },
+      ],
+      attributes: {
+        preload: false,
+        controls: true,
+      },
+    },
+  };
+});
 ---
 
 <DefaultPageLayout
   content={{
-    title: project.title,
-    description: project.description,
+    title: project?.title,
+    description: project?.description,
+    image: project?.thumbnail,
+    permalink: `/projects/${project?.slug}/`,
   }}
   showPageHeader={false}
 >
@@ -56,11 +81,7 @@ if (!project) {
     <p class="text-xl text-gray-500 mb-8">{project.type}</p>
 
     <!-- LightGallery container -->
-    <LightGalleryWrapper
-      images={project.gallery}
-      title={project.title}
-      client:load
-    />
+    <LightGalleryWrapper items={items} title={project.title} client:load />
   </section>
 
   <style>
@@ -98,4 +119,18 @@ if (!project) {
       background: transparent;
     }
   </style>
+  {
+    project.url && (
+      <div class="mt-8 text-center">
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition"
+        >
+          View Live Site
+        </a>
+      </div>
+    )
+  }
 </DefaultPageLayout>

@@ -1,4 +1,20 @@
 // src/data/projects.js
+/**
+ * gallery entries support:
+ *  - image item: string URL to an image
+ *  - video item: object with
+ *      src: Vimeo page URL,
+ *      poster: thumbnail image URL
+ *
+ * Example video entry:
+ *   // A gallery can mix image URLs and video objects
+ *   gallery: [
+ *     '/images/projects/image1.jpg',
+ *     { src: 'https://vimeo.com/123456789', poster: '/images/projects/video-thumb.jpg' },
+ *   ];
+ * To include a Vimeo video, use an object in the gallery:
+ *   { src: 'https://vimeo.com/123456789', poster: '/images/projects/video-thumb.jpg' }
+ */
 export const projects = [
     {
         slug: 'build-a-bear',
@@ -177,6 +193,118 @@ export const projects = [
         '/images/projects/nywa-logo-1.jpg',
       ]
     },
-    // add the rest...
+    {
+      slug: 'electricenjin-logo',
+      title: 'Electric Enjin Logo',
+      category: 'Logo Design',
+      type: 'Logo Design',
+      description: 'Logo design for Electric Enjin, an internet services company.',
+      thumbnail: '/images/projects/electricenjin-logo-thumb.jpg',
+      gallery: [
+        '/images/projects/electricenjin-logo-1.jpg',
+      ]
+    },
+    {
+      slug: 'autismcommunities-logo',
+      title: 'Autism Communities Logo',
+      category: 'Logo Design',
+      type: 'Logo Design',
+      description: 'Logo design for Autism Communities, a non-profit organization.',
+      thumbnail: '/images/projects/autismcommunities-logo-thumb.jpg',
+      gallery: [
+        '/images/projects/autismcommunities-logo-1.jpg',
+      ]
+    },
+    {
+      slug: 'fortheoutcome-logo',
+      title: 'For the Outcome Logo',
+      category: 'Logo Design',
+      type: 'Logo Design',
+      description: 'Logo design for Really Good Stuff, an educational suppliment company.',
+      thumbnail: '/images/projects/fortheoutcome-logo-thumb.jpg',
+      gallery: [
+        '/images/projects/fortheoutcome-logo-1.jpg',
+      ]
+    },
+    {
+      slug: 'riverscape-3D',
+      title: 'Riverscape 3D',
+      category: '3D Animation',
+      type: '3D Animation',
+      description: 'A self-promotional real-time 3D animation.',
+      url: 'https://riverscape.glitch.me/',
+      thumbnail: '/images/projects/riverscape-thumb.jpg',
+      gallery: [
+        '/images/projects/riverscape-1.jpg',
+      ]
+    },
+    {
+      slug: 'planetx-3D',
+      title: 'Escape from Planet X 3D',
+      category: '3D Animation',
+      type: '3D Animation',
+      description: 'A self-promotional real-time 3D animation.',
+      url: 'https://escape-planetx.glitch.me/',
+      thumbnail: '/images/projects/planetx-thumb.jpg',
+      gallery: [
+        '/images/projects/planetx-1.jpg',
+      ]
+    },
+    {
+      slug: 'insideout-logo',
+      title: 'Inside Out Logo',
+      category: 'Logo Design',
+      type: 'Logo Design',
+      description: 'Logo design for Inside Out Tee Shirts',
+      thumbnail: '/images/projects/insideout-logo-thumb.jpg',
+      gallery: [
+        '/images/projects/insideout-logo-1.jpg',
+      ]
+    },
+    {
+      slug: 'beiersdorf-video',
+      title: 'Beiersdorf Video',
+      category: 'Motion Graphics',
+      type: 'Corporate Video',
+      description: 'Corporate video for Beiersdorf, a skincare company.',
+      thumbnail: '/images/projects/beiersdorf-video-thumb.jpg',
+      gallery: [
+        { src: 'https://vimeo.com/1081501511', poster: '/images/projects/beiersdorf-video-1.jpg' },
+      ]
+    },
+    {
+      slug: 'symtrain-landingpage',
+      title: 'Symtrain Landing Page Design',
+      category: 'Website Design',
+      type: 'Brand Website',
+      description: 'Landing page design for Symtrain, a training company.',
+      thumbnail: '/images/projects/symtrain-website-thumb.jpg',
+      gallery: [
+        '/images/projects/symtrain-website-1.jpg',
+      ]
+    },
+    {
+      slug: 'gbb-logo',
+      title: 'The Grennan Brothers Band Logo',
+      category: 'Logo Design',
+      type: 'Logo Design',
+      description: 'Logo design for The Grennan Brothers Band, a band from Newtown, CT.',
+      thumbnail: '/images/projects/gbb-logo-thumb.jpg',
+      gallery: [
+        '/images/projects/gbb-logo-1.jpg',
+      ]
+    },
+    {
+      slug: 'breakout-video',
+      title: 'Breakout Demo Video',
+      category: 'Motion Graphics',
+      type: 'Breakout Video',
+      description: 'Self-promotion demo of a breakout video for LinkedIn.',
+      thumbnail: '/images/projects/breakout-demo-thumb.jpg',
+      gallery: [
+        { src: 'https://vimeo.com/1081550423', poster: '/images/projects/breakout-demo-1.jpg' },
+      ]
+    },
+    // add the rest...https://vimeo.com/1081550423?share=copy#t=0
+
   ];
-  

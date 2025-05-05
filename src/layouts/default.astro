@@ -34,6 +34,13 @@ const { content, showPageHeader = true } = Astro.props;
       crossorigin
       onload="this.onload=null;this.rel='stylesheet'"
     />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/css/lg-video.css"
+      as="style"
+      crossorigin
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <!-- Fallback for no JavaScript -->
     <noscript>
       <link
@@ -64,6 +71,7 @@ const { content, showPageHeader = true } = Astro.props;
       type="font/woff2"
       crossorigin
     />
+    <script src="https://player.vimeo.com/api/player.js" defer></script>
   </head>
   <MainLayout>
     {
