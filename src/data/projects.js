@@ -229,7 +229,7 @@ export const projects = [
     {
       slug: 'riverscape-3D',
       title: 'Riverscape 3D',
-      category: 'Three.js Animation',
+      category: 'Three.js Environments',
       type: '3D Animation',
       description: 'A self-promotional real-time 3D animation.',
       url: 'https://riverscape.glitch.me/',
@@ -241,7 +241,7 @@ export const projects = [
     {
       slug: 'planetx-3D',
       title: 'Escape from Planet X 3D',
-      category: 'Three.js Animation',
+      category: 'Three.js Environments',
       type: '3D Animation',
       description: 'A self-promotional real-time 3D animation.',
       url: 'https://escape-planetx.glitch.me/',
@@ -305,6 +305,77 @@ export const projects = [
         { src: 'https://vimeo.com/1081550423', poster: '/images/projects/breakout-demo-1.jpg' },
       ]
     },
-    // add the rest...https://vimeo.com/1081550423?share=copy#t=0
+    {
+      slug: 'the-factory',
+      title: 'The Factory - A Three.js Environment',
+      category: 'Three.js Environments',
+      type: '3D Animation',
+      description: 'A self-promotional real-time 3D environment.',
+      url: 'https://main.dp50w2vzohoj1.amplifyapp.com/',
+      thumbnail: '/images/projects/factory-thumb.jpg',
+      gallery: [
+        '/images/projects/factory-1.jpg',
+        '/images/projects/factory-2.jpg',
+        '/images/projects/factory-3.jpg',
+        '/images/projects/factory-4.jpg',
+      ]
+    },
+    {
+      slug: 'temple-environment',
+      title: '3D Environment - Temple',
+      category: 'Three.js Environments',
+      type: '3D Environment',
+      description: 'A self-promotional interactive 3D environment.',
+      url: 'https://main.d1el9mu5mpb6mg.amplifyapp.com/',
+      thumbnail: '/images/projects/temple-environment-thumb.jpg',
+      gallery: [
+        '/images/projects/temple-environment-1.jpg',
+        '/images/projects/temple-environment-2.jpg',
+        '/images/projects/temple-environment-3.jpg',
+      ]
+    },
+    {
+      slug: '3D-book',
+      title: '3D Environment - Book',
+      category: 'Three.js Environments',
+      type: '3D Environment',
+      description: 'A self-promotional interactive 3D book.',
+      url: 'https://main.d1el9mu5mpb6mg.amplifyapp.com/',
+      thumbnail: '/images/projects/book-interactive-thumb.jpg',
+      gallery: [
+        '/images/projects/book-interactive-1.jpg',
+        '/images/projects/book-interactive-2.jpg',
+        '/images/projects/book-interactive-3.jpg',
+      ]
+    },
+    {
+      slug: '3D-box',
+      title: '3D Environment - Box',
+      category: 'Three.js Environments',
+      type: '3D Environment',
+      description: 'A self-promotional interactive 3D box.',
+      url: 'https://main.d3qvqtwcvdx5r7.amplifyapp.com/',
+      thumbnail: '/images/projects/3D-box-thumb.jpg',
+      gallery: [
+        '/images/projects/3D-box-1.jpg',
+        '/images/projects/3D-box-2.jpg',
+        '/images/projects/3D-box-3.jpg',
+      ]
+    },
+    {
+      slug: '3D-office',
+      title: '3D Environment - Office',
+      category: 'Three.js Environments',
+      type: '3D Environment',
+      description: 'A self-promotional 3D Office.',
+      url: 'https://main.dhvr9i7niybno.amplifyapp.com/',
+      thumbnail: '/images/projects/3D-office-thumb.jpg',
+      gallery: [
+        '/images/projects/3D-office-1.jpg',
+        '/images/projects/3D-office-2.jpg',
+        '/images/projects/3D-office-3.jpg',
+      ]
+    },
+    // add the rest...https://main.dhvr9i7niybno.amplifyapp.com/
 
   ];
