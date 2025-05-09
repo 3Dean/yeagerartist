@@ -376,6 +376,20 @@ export const projects = [
         '/images/projects/3D-office-3.jpg',
       ]
     },
+    {
+      slug: '3D-music-room',
+      title: '3D Environment - Music Room',
+      category: 'Three.js Environments',
+      type: '3D Environment',
+      description: 'A self-promotional 3D Music Space.',
+      url: 'https://hotter-coffee.d1dejm6fbp1yzl.amplifyapp.com/',
+      thumbnail: '/images/projects/musicroom-thumb.jpg',
+      gallery: [
+        '/images/projects/musicroom-1.jpg',
+        '/images/projects/musicroom-2.jpg',
+        '/images/projects/musicroom-3.jpg',
+      ]
+    },
     // add the rest...https://main.dhvr9i7niybno.amplifyapp.com/
 
   ];
