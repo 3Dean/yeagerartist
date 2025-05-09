@@ -187,7 +187,7 @@ export const projects = [
       title: 'NYWA Logo',
       category: 'Logo Design',
       type: 'Logo Design',
-      description: 'Logo design for the Newtown Youth Wrestling Association.',
+      description: 'Adaptation for the Newtown Youth Wrestling Association.',
       thumbnail: '/images/projects/nywa-logo-thumb.jpg',
       gallery: [
         '/images/projects/nywa-logo-1.jpg',
@@ -378,10 +378,10 @@ export const projects = [
     },
     {
       slug: '3D-music-room',
-      title: '3D Environment - Music Room',
+      title: '3D Environment - Music',
       category: 'Three.js Environments',
-      type: '3D Environment',
-      description: 'A self-promotional 3D Music Space.',
+      type: 'Enjoy the GrooveSalad stream',
+      description: 'Chillax in this 3D Music Space.',
       url: 'https://hotter-coffee.d1dejm6fbp1yzl.amplifyapp.com/',
       thumbnail: '/images/projects/musicroom-thumb.jpg',
       gallery: [
