@@ -352,14 +352,15 @@ export const projects = [
       slug: '3D-box',
       title: '3D Environment - Box',
       category: 'Three.js Environments',
-      type: 'I took the boilerplate 3D box and added SVG texture, sprite sheet animated frames and a custom shader for the emissive texture. Turn down your speakers. I created a quick A.I. generated soundtrack for this one.',
+      type: 'I took the boilerplate 3D box and added SVG texture, sprite sheet animated frames and a custom shader for the emissive texture. Turn down your speakers. I created a quick A.I. generated soundtrack for this one. Zoom in to see the near lossless quality of the texture.',
       description: 'A self-promotional interactive 3D box.',
       url: 'https://main.d3qvqtwcvdx5r7.amplifyapp.com/',
       thumbnail: '/images/projects/3D-box-thumb.jpg',
       gallery: [
         '/images/projects/3D-box-1.jpg',
-        '/images/projects/3D-box-2.jpg',
-        '/images/projects/3D-box-3.jpg',
+        '/images/projects/officeobject.svg',
+        //'/images/projects/officeobject_diffuseOriginal.png',
+        '/images/projects/officeobject_emission_spritesheet.png',
       ]
     },
     {
