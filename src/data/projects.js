@@ -368,7 +368,7 @@ export const projects = [
       title: '3D Environment - Office',
       category: 'Three.js Environments',
       type: '3D Environment',
-      description: 'A self-promotional 3D Office.',
+      description: 'A personal project for a 3D Office.',
       url: 'https://main.dhvr9i7niybno.amplifyapp.com/',
       thumbnail: '/images/projects/3D-office-thumb.jpg',
       gallery: [
@@ -383,7 +383,7 @@ export const projects = [
       category: 'Three.js Environments',
       type: 'Enjoy the GrooveSalad stream',
       description: 'Chillax in this 3D Music Space.',
-      url: 'https://hotter-coffee.d1dejm6fbp1yzl.amplifyapp.com/',
+      url: 'https://main.d1dejm6fbp1yzl.amplifyapp.com/',
       thumbnail: '/images/projects/musicroom-thumb.jpg',
       gallery: [
         '/images/projects/musicroom-1.jpg',
