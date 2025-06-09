@@ -16,6 +16,128 @@
  *   { src: 'https://vimeo.com/123456789', poster: '/images/projects/video-thumb.jpg' }
  */
 export const projects = [
+  {
+      slug: 'demo-reel',
+      title: 'Demo Reel',
+      category: 'Motion Graphics',
+      type: 'Self-Promotion',
+      description: 'A self-promotion demo reel.',
+      thumbnail: '/images/projects/demo-reel-thumb.jpg',
+      gallery: [
+        { src: 'https://vimeo.com/194894241', poster: '/images/projects/demo-reel-thumb.jpg' },
+      ]
+    },
+  {
+      slug: 'the-factory',
+      title: 'The Factory',
+      category: 'Three.js Environments',
+      type: '3D Animation',
+      description: 'A personal project for a real-time 3D art gallery.',
+      url: 'https://main.dp50w2vzohoj1.amplifyapp.com/',
+      thumbnail: '/images/projects/factory-thumb.jpg',
+      gallery: [
+        '/images/projects/factory-1.jpg',
+        '/images/projects/factory-2.jpg',
+        '/images/projects/factory-3.jpg',
+        '/images/projects/factory-4.jpg',
+      ]
+    },
+ {
+      slug: '3D-music-room',
+      title: '3D Environment - Music',
+      category: 'Three.js Environments',
+      type: 'Enjoy the GrooveSalad stream',
+      description: 'Chillax in this 3D Music Space.',
+      url: 'https://main.d1dejm6fbp1yzl.amplifyapp.com/',
+      thumbnail: '/images/projects/musicroom-thumb.jpg',
+      gallery: [
+        '/images/projects/musicroom-1.jpg',
+        '/images/projects/musicroom-2.jpg',
+        '/images/projects/musicroom-3.jpg',
+      ]
+    },
+{
+      slug: '3D-office',
+      title: '3D Environment - Office',
+      category: 'Three.js Environments',
+      type: '3D Environment',
+      description: 'A personal project for a 3D Office.',
+      url: 'https://main.dhvr9i7niybno.amplifyapp.com/',
+      thumbnail: '/images/projects/3D-office-thumb.jpg',
+      gallery: [
+        '/images/projects/3D-office-1.jpg',
+        '/images/projects/3D-office-2.jpg',
+        '/images/projects/3D-office-3.jpg',
+      ]
+    },
+    {
+      slug: '3D-box',
+      title: '3D Environment - Box',
+      category: 'Three.js Environments',
+      type: 'I took the boilerplate 3D box and added SVG texture, sprite sheet animated frames and a custom shader for the emissive texture. Turn down your speakers. I created a quick A.I. generated soundtrack for this one. Zoom in to see the near lossless quality of the texture.',
+      description: 'My take on the default cube in Three.js.',
+      url: 'https://main.d3qvqtwcvdx5r7.amplifyapp.com/',
+      thumbnail: '/images/projects/3D-box-thumb.jpg',
+      gallery: [
+        '/images/projects/3D-box-1.jpg',
+        '/images/projects/officeobject.svg',
+        //'/images/projects/officeobject_diffuseOriginal.png',
+        '/images/projects/officeobject_emission_spritesheet.png',
+      ]
+    },
+    {
+      slug: '3D-book',
+      title: '3D Environment - Book',
+      category: 'Three.js Environments',
+      type: '3D Environment',
+      description: 'An interactive 3D book.',
+      url: 'https://main.d1el9mu5mpb6mg.amplifyapp.com/',
+      thumbnail: '/images/projects/book-interactive-thumb.jpg',
+      gallery: [
+        '/images/projects/book-interactive-1.jpg',
+        '/images/projects/book-interactive-2.jpg',
+        '/images/projects/book-interactive-3.jpg',
+      ]
+    },
+     {
+      slug: 'temple-environment',
+      title: '3D Environment - Temple',
+      category: 'Three.js Environments',
+      type: '3D Environment',
+      description: 'A personal project to create a first-person 3D environment.',
+      url: 'https://main.d1el9mu5mpb6mg.amplifyapp.com/',
+      thumbnail: '/images/projects/temple-environment-thumb.jpg',
+      gallery: [
+        '/images/projects/temple-environment-1.jpg',
+        '/images/projects/temple-environment-2.jpg',
+        '/images/projects/temple-environment-3.jpg',
+      ]
+    },
+    {
+      slug: 'cigna-broker-site',
+      title: 'Cigna Broker Website',
+      category: 'Website Design',
+      type: 'Healthcare Broker Website design',
+      description: 'A healthcare broker website.',
+      thumbnail: '/images/projects/cigna-broker-site-thumb.jpg',
+      gallery: [
+        '/images/projects/cigna-broker-site-1.jpg',
+        '/images/projects/cigna-broker-site-2.jpg',
+        '/images/projects/cigna-broker-site-3.jpg',
+        '/images/projects/cigna-broker-site-4.jpg',
+      ]
+    },
+    {
+      slug: 'san-pellegrino',
+      title: 'San Pellegrino Microsite',
+      category: 'Website Design',
+      type: 'Brand Microsite',
+      description: 'A brand microsite for San Pellegrino.',
+      thumbnail: '/images/projects/sanpellegrino-thumb.jpg',
+      gallery: [
+        '/images/projects/sanpellegrino-1.jpg',
+      ]
+    },
     {
         slug: 'build-a-bear',
         title: 'Build-A-Bear Workshop',
@@ -91,20 +213,7 @@ export const projects = [
         '/images/projects/wsjwine-2.jpg',
       ]
     },
-    {
-      slug: 'cigna-broker-site',
-      title: 'Cigna Broker Website',
-      category: 'Website Design',
-      type: 'Healthcare Broker Website design',
-      description: 'A healthcare broker website.',
-      thumbnail: '/images/projects/cigna-broker-site-thumb.jpg',
-      gallery: [
-        '/images/projects/cigna-broker-site-1.jpg',
-        '/images/projects/cigna-broker-site-2.jpg',
-        '/images/projects/cigna-broker-site-3.jpg',
-        '/images/projects/cigna-broker-site-4.jpg',
-      ]
-    },
+    
     {
       slug: 'citi-kiosk',
       title: 'Citi Kiosk',
@@ -144,17 +253,7 @@ export const projects = [
         '/images/projects/cjm-4.jpg',
       ]
     },
-    {
-      slug: 'san-pellegrino',
-      title: 'San Pellegrino Microsite',
-      category: 'Website Design',
-      type: 'Brand Microsite',
-      description: 'A brand microsite for San Pellegrino.',
-      thumbnail: '/images/projects/sanpellegrino-thumb.jpg',
-      gallery: [
-        '/images/projects/sanpellegrino-1.jpg',
-      ]
-    },
+    
     {
       slug: 'perrier-warhol',
       title: 'Perrier Microsite',
@@ -171,17 +270,7 @@ export const projects = [
         '/images/projects/perrier-6.jpg',
       ]
     },
-    {
-      slug: 'demo-reel',
-      title: 'Demo Reel',
-      category: 'Motion Graphics',
-      type: 'Self-Promotion',
-      description: 'A self-promotion demo reel.',
-      thumbnail: '/images/projects/demo-reel-thumb.jpg',
-      gallery: [
-        { src: 'https://vimeo.com/194894241', poster: '/images/projects/demo-reel-thumb.jpg' },
-      ]
-    },
+    
     {
       slug: 'nywa-logo',
       title: 'NYWA Logo',
@@ -220,7 +309,7 @@ export const projects = [
       title: 'For the Outcome Logo',
       category: 'Logo Design',
       type: 'Logo Design',
-      description: 'Logo design for Really Good Stuff, an educational suppliment company.',
+      description: 'Logo design for Really Good Stuff, an educational supplement company.',
       thumbnail: '/images/projects/fortheoutcome-logo-thumb.jpg',
       gallery: [
         '/images/projects/fortheoutcome-logo-1.jpg',
@@ -231,7 +320,7 @@ export const projects = [
       title: 'Riverscape 3D',
       category: 'Three.js Environments',
       type: '3D Animation',
-      description: 'A self-promotional real-time 3D animation.',
+      description: 'A personal project exploring A-Frame.',
       url: 'https://riverscape.glitch.me/',
       thumbnail: '/images/projects/riverscape-thumb.jpg',
       gallery: [
@@ -243,7 +332,7 @@ export const projects = [
       title: 'Escape from Planet X 3D',
       category: 'Three.js Environments',
       type: '3D Animation',
-      description: 'A self-promotional real-time 3D animation.',
+      description: 'A real-time 3D animation scene.',
       url: 'https://escape-planetx.glitch.me/',
       thumbnail: '/images/projects/planetx-thumb.jpg',
       gallery: [
@@ -255,7 +344,7 @@ export const projects = [
       title: 'Inside Out Logo',
       category: 'Logo Design',
       type: 'Logo Design',
-      description: 'Logo design for Inside Out Tee Shirts',
+      description: 'Logo design for Inside Out T-Shirts',
       thumbnail: '/images/projects/insideout-logo-thumb.jpg',
       gallery: [
         '/images/projects/insideout-logo-1.jpg',
@@ -299,98 +388,13 @@ export const projects = [
       title: 'Breakout Demo Video',
       category: 'Motion Graphics',
       type: 'Breakout Video',
-      description: 'Self-promotion demo of a breakout video for LinkedIn.',
+      description: 'A demo of a breakout video for LinkedIn.',
       thumbnail: '/images/projects/breakout-demo-thumb.jpg',
       gallery: [
         { src: 'https://vimeo.com/1081550423', poster: '/images/projects/breakout-demo-1.jpg' },
       ]
     },
-    {
-      slug: 'the-factory',
-      title: 'The Factory - A Three.js Environment',
-      category: 'Three.js Environments',
-      type: '3D Animation',
-      description: 'A self-promotional real-time 3D environment.',
-      url: 'https://main.dp50w2vzohoj1.amplifyapp.com/',
-      thumbnail: '/images/projects/factory-thumb.jpg',
-      gallery: [
-        '/images/projects/factory-1.jpg',
-        '/images/projects/factory-2.jpg',
-        '/images/projects/factory-3.jpg',
-        '/images/projects/factory-4.jpg',
-      ]
-    },
-    {
-      slug: 'temple-environment',
-      title: '3D Environment - Temple',
-      category: 'Three.js Environments',
-      type: '3D Environment',
-      description: 'A self-promotional interactive 3D environment.',
-      url: 'https://main.d1el9mu5mpb6mg.amplifyapp.com/',
-      thumbnail: '/images/projects/temple-environment-thumb.jpg',
-      gallery: [
-        '/images/projects/temple-environment-1.jpg',
-        '/images/projects/temple-environment-2.jpg',
-        '/images/projects/temple-environment-3.jpg',
-      ]
-    },
-    {
-      slug: '3D-book',
-      title: '3D Environment - Book',
-      category: 'Three.js Environments',
-      type: '3D Environment',
-      description: 'A self-promotional interactive 3D book.',
-      url: 'https://main.d1el9mu5mpb6mg.amplifyapp.com/',
-      thumbnail: '/images/projects/book-interactive-thumb.jpg',
-      gallery: [
-        '/images/projects/book-interactive-1.jpg',
-        '/images/projects/book-interactive-2.jpg',
-        '/images/projects/book-interactive-3.jpg',
-      ]
-    },
-    {
-      slug: '3D-box',
-      title: '3D Environment - Box',
-      category: 'Three.js Environments',
-      type: 'I took the boilerplate 3D box and added SVG texture, sprite sheet animated frames and a custom shader for the emissive texture. Turn down your speakers. I created a quick A.I. generated soundtrack for this one. Zoom in to see the near lossless quality of the texture.',
-      description: 'A self-promotional interactive 3D box.',
-      url: 'https://main.d3qvqtwcvdx5r7.amplifyapp.com/',
-      thumbnail: '/images/projects/3D-box-thumb.jpg',
-      gallery: [
-        '/images/projects/3D-box-1.jpg',
-        '/images/projects/officeobject.svg',
-        //'/images/projects/officeobject_diffuseOriginal.png',
-        '/images/projects/officeobject_emission_spritesheet.png',
-      ]
-    },
-    {
-      slug: '3D-office',
-      title: '3D Environment - Office',
-      category: 'Three.js Environments',
-      type: '3D Environment',
-      description: 'A personal project for a 3D Office.',
-      url: 'https://main.dhvr9i7niybno.amplifyapp.com/',
-      thumbnail: '/images/projects/3D-office-thumb.jpg',
-      gallery: [
-        '/images/projects/3D-office-1.jpg',
-        '/images/projects/3D-office-2.jpg',
-        '/images/projects/3D-office-3.jpg',
-      ]
-    },
-    {
-      slug: '3D-music-room',
-      title: '3D Environment - Music',
-      category: 'Three.js Environments',
-      type: 'Enjoy the GrooveSalad stream',
-      description: 'Chillax in this 3D Music Space.',
-      url: 'https://main.d1dejm6fbp1yzl.amplifyapp.com/',
-      thumbnail: '/images/projects/musicroom-thumb.jpg',
-      gallery: [
-        '/images/projects/musicroom-1.jpg',
-        '/images/projects/musicroom-2.jpg',
-        '/images/projects/musicroom-3.jpg',
-      ]
-    },
+   
     // add the rest...https://main.dhvr9i7niybno.amplifyapp.com/
 
   ];
