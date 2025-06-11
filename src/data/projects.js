@@ -21,7 +21,7 @@ export const projects = [
       title: 'Demo Reel',
       category: 'Motion Graphics',
       type: 'Self-Promotion',
-      description: 'A self-promotion demo reel.',
+      description: '3D demo reel.',
       thumbnail: '/images/projects/demo-reel-thumb.jpg',
       gallery: [
         { src: 'https://vimeo.com/194894241', poster: '/images/projects/demo-reel-thumb.jpg' },
