@@ -91,7 +91,7 @@ export const projects = [
       category: 'Three.js Environments',
       type: '3D Environment',
       description: 'An interactive 3D book.',
-      url: 'https://main.d1el9mu5mpb6mg.amplifyapp.com/',
+      url: 'https://main.d3hnltmtj6c1gu.amplifyapp.com/',
       thumbnail: '/images/projects/book-interactive-thumb.jpg',
       gallery: [
         '/images/projects/book-interactive-1.jpg',
@@ -320,8 +320,8 @@ export const projects = [
       title: 'Riverscape 3D',
       category: 'Three.js Environments',
       type: '3D Animation',
-      description: 'A personal project exploring A-Frame.',
-      url: 'https://riverscape.glitch.me/',
+      description: 'A personal project exploring Three JS.',
+      url: 'https://main.d74vgdg7p1x00.amplifyapp.com/',
       thumbnail: '/images/projects/riverscape-thumb.jpg',
       gallery: [
         '/images/projects/riverscape-1.jpg',
