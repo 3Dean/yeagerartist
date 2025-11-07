@@ -333,7 +333,7 @@ export const projects = [
       category: 'Three.js Environments',
       type: '3D Animation',
       description: 'A real-time 3D animation scene.',
-      url: 'https://escape-planetx.glitch.me/',
+      url: 'https://main.d3t7633tqqgda6.amplifyapp.com/',
       thumbnail: '/images/projects/planetx-thumb.jpg',
       gallery: [
         '/images/projects/planetx-1.jpg',
