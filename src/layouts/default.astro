@@ -10,36 +10,29 @@ const { content, showPageHeader = true } = Astro.props;
 <html lang="en">
   <head>
     <script
+      is:inline
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
       defer></script>
     <!-- Preload LightGallery CSS for projects pages -->
     <link
-      rel="preload"
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/css/lightgallery.css"
-      as="style"
       crossorigin
-      onload="this.onload=null;this.rel='stylesheet'"
     />
     <link
-      rel="preload"
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/css/lg-zoom.css"
-      as="style"
       crossorigin
-      onload="this.onload=null;this.rel='stylesheet'"
     />
     <link
-      rel="preload"
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/css/lg-thumbnail.css"
-      as="style"
       crossorigin
-      onload="this.onload=null;this.rel='stylesheet'"
     />
     <link
-      rel="preload"
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/css/lg-video.css"
-      as="style"
       crossorigin
-      onload="this.onload=null;this.rel='stylesheet'"
     />
     <!-- Fallback for no JavaScript -->
     <noscript>
@@ -71,7 +64,7 @@ const { content, showPageHeader = true } = Astro.props;
       type="font/woff2"
       crossorigin
     /> -->
-    <script src="https://player.vimeo.com/api/player.js" defer></script>
+    <script is:inline src="https://player.vimeo.com/api/player.js" defer></script>
   </head>
   <MainLayout>
     {

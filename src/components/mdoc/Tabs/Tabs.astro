@@ -1,5 +1,5 @@
 ---
-import Tabs from './index.svelte'
+import TabsComponent from './index.svelte'
 import type { TabItem } from './tabs'
 
 interface Props {
@@ -8,4 +8,4 @@ interface Props {
 
 const { tabs } = Astro.props
 ---
-<Tabs tabs={tabs} client:visible/>
+<TabsComponent tabs={tabs} client:visible/>

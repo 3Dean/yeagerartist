@@ -31,7 +31,13 @@ const response = await fetch(
 )
 const allPosts = await response.json()
 
-const sortedPosts = (SITE.ytChannelId ? toMediaFormatFromFeed2JsonUrl(allPosts) : allPosts).sort((a, b) => new Date(b.date) - new Date(a.date))
+const sortedPosts = (SITE.ytChannelId
+  ? toMediaFormatFromFeed2JsonUrl(allPosts)
+  : allPosts
+).sort(
+  (a: { date: string }, b: { date: string }) =>
+    new Date(b.date).getTime() - new Date(a.date).getTime()
+)
 ---
 <DefaultPageLayout content={{ title, description }}>
     <MediaPreviewList posts={sortedPosts} />

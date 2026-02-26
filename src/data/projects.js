@@ -105,7 +105,7 @@ export const projects = [
       category: 'Three.js Environments',
       type: '3D Environment',
       description: 'A personal project to create a first-person 3D environment.',
-      url: 'https://main.d1el9mu5mpb6mg.amplifyapp.com/',
+      url: 'https://avatar.d1el9mu5mpb6mg.amplifyapp.com/',
       thumbnail: '/images/projects/temple-environment-thumb.jpg',
       gallery: [
         '/images/projects/temple-environment-1.jpg',

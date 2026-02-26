@@ -1,5 +1,14 @@
-<script>
-  export let projects = [];
+<script lang="ts">
+  type Project = {
+    slug: string;
+    title: string;
+    category: string;
+    description: string;
+    thumbnail?: string;
+    image?: string;
+  };
+
+  export let projects: Project[] = [];
 
   let filter = "All";
   let categories = ["All", ...new Set(projects.map((p) => p.category))];

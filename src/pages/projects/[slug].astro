@@ -1,7 +1,6 @@
 ---
 import { projects } from "../../data/projects.js";
 import DefaultPageLayout from "$/layouts/default.astro";
-import { Image } from "astro:assets";
 import LightGalleryWrapper from "$/components/LightGalleryWrapper.svelte";
 
 // Generate static paths for all projects
@@ -55,25 +54,19 @@ const items = project.gallery.map((g) => {
 >
   <!-- Add preload links for LightGallery CSS -->
   <link
-    rel="preload"
+    rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/css/lightgallery.css"
-    as="style"
     crossorigin
-    onload="this.onload=null;this.rel='stylesheet'"
   />
   <link
-    rel="preload"
+    rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/css/lg-zoom.css"
-    as="style"
     crossorigin
-    onload="this.onload=null;this.rel='stylesheet'"
   />
   <link
-    rel="preload"
+    rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/css/lg-thumbnail.css"
-    as="style"
     crossorigin
-    onload="this.onload=null;this.rel='stylesheet'"
   />
 
   <section class="px-4 py-12 max-w-5xl mx-auto">

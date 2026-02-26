@@ -17,6 +17,7 @@
       attributes?: Record<string, any>;
     };
   }> = [];
+  export let title = "";
 
   let galleryEl: HTMLElement;
 
