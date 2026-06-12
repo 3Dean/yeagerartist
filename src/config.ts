@@ -31,8 +31,8 @@ export const SITE = {
 	// Your site's detail?
 	name: "Dean Yeager",
 	title: "Dean Yeager",
-	description: "Designer, Animator, and Illustrator",
-	url: "https:yeagerartist.net",
+	description: "Multidisciplinary Designer, Animator & 3D Artist",
+	url: "https:deanyeager.me",
 	githubUrl: "#",
 	listDrafts: true,
 	image:
@@ -48,7 +48,7 @@ export const SITE = {
 	authorImage: "", // Example: https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg, https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
 	// Author: Bio
 	authorBio:
-		"Designer, Animator, and Illustrator blending creativity with strategic design to inspire and engage audiences.",
+		"Multidisciplinary designer, animator, and 3D artist creating polished visuals and digital experiences that engage, inspire, and connect.",
 };
 
 // Ink - Theme configuration
