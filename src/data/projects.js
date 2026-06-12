@@ -114,6 +114,20 @@ export const projects = [
       ]
     },
     {
+      slug: '3D Model Viewer',
+      title: '3D Model Viewer',
+      category: 'Three.js Environments',
+      type: '3D Environment',
+      description: 'A personal project to create a 3D model viewer.',
+      url: 'https://main.dl7efti2owph.amplifyapp.com/',
+      thumbnail: '/images/projects/3D-model-viewer-thumb.jpg',
+      gallery: [
+        '/images/projects/3D-model-viewer-1.jpg',
+        '/images/projects/3D-model-viewer-2.jpg',
+        '/images/projects/3D-model-viewer-3.jpg',
+      ]
+    },
+    {
       slug: 'cigna-broker-site',
       title: 'Cigna Broker Website',
       category: 'Website Design',
