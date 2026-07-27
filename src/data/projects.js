@@ -28,11 +28,26 @@ export const projects = [
       ]
     },
   {
+      slug: 'the-gallery',
+      title: 'My Virtual Gallery',
+      category: 'Three.js Environments',
+      type: '3D E-Commerce Experience',
+      description: 'A personal project for a real-time 3D art gallery.',
+      url: 'https://paintedpaths.studio/experience/',
+      thumbnail: '/images/projects/env-project-17-thumbnail.jpg',
+      gallery: [
+        '/images/projects/env-project-17-gallery-6.jpg',
+        '/images/projects/env-project-17-gallery-2.jpg',
+        '/images/projects/env-project-17-gallery-3.jpg',
+        '/images/projects/env-project-17-gallery-9.jpg',
+      ]
+    },
+  {
       slug: 'the-factory',
       title: 'The Factory',
       category: 'Three.js Environments',
       type: '3D Animation',
-      description: 'A personal project for a real-time 3D art gallery.',
+      description: 'A personal project for a real-time art community space.',
       url: 'https://main.dp50w2vzohoj1.amplifyapp.com/',
       thumbnail: '/images/projects/factory-thumb.jpg',
       gallery: [
