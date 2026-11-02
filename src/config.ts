@@ -31,7 +31,7 @@ export const SITE = {
 	// Your site's detail?
 	name: "Dean Yeager",
 	title: "Dean Yeager",
-	description: "Multidisciplinary Designer, Animator & 3D Artist",
+	description: "Artist, Designer & 3D Environment Creator",
 	url: "https:deanyeager.me",
 	githubUrl: "#",
 	listDrafts: true,
@@ -48,7 +48,7 @@ export const SITE = {
 	authorImage: "", // Example: https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg, https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
 	// Author: Bio
 	authorBio:
-		"Multidisciplinary designer, animator, and 3D artist creating polished visuals and digital experiences that engage, inspire, and connect.",
+		"I'm Dean Yeager, a Connecticut-based artist and designer working across visual design, 3D environments, and interactive experiences. I bring ideas to life through concept development, animation, creative technology, and hands-on making.",
 };
 
 // Ink - Theme configuration
