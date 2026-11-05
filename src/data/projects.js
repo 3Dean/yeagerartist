@@ -17,11 +17,23 @@
  */
 export const projects = [
   {
+      slug: 'festival-booth',
+      title: 'Painted Paths - Festival Booth Design',
+      category: 'Environmental Design',
+      type: 'Exhibition Design',
+      description: 'A festival booth design for an artist’s exhibition of original paintings.',
+      thumbnail: '/images/projects/boothoctober-thumb.jpg',
+      gallery: [
+        '/images/projects/boothoctober-1.jpg',
+        '/images/projects/boothoctober-2.jpg',
+        { src: 'https://vimeo.com/1242562896', poster: '/images/projects/stump-video-thumb.jpg' },
+      ]
+    },{
       slug: 'demo-reel',
       title: 'Demo Reel',
       category: 'Motion Graphics',
       type: 'Self-Promotion',
-      description: '3D demo reel.',
+      description: 'A selection of 3D work, brought together in motion.',
       thumbnail: '/images/projects/demo-reel-thumb.jpg',
       gallery: [
         { src: 'https://vimeo.com/194894241', poster: '/images/projects/demo-reel-thumb.jpg' },
@@ -29,10 +41,10 @@ export const projects = [
     },
   {
       slug: 'the-gallery',
-      title: 'My Virtual Gallery',
+      title: 'Painted Paths — Interactive Art Gallery',
       category: 'Three.js Environments',
       type: '3D E-Commerce Experience',
-      description: 'A personal project for a real-time 3D art gallery.',
+      description: 'An online exhibition connecting my original acrylic paintings with an interactive 3D gallery and augmented-reality artwork viewing.',
       url: 'https://paintedpaths.studio/experience/',
       thumbnail: '/images/projects/env-project-17-thumbnail.jpg',
       gallery: [
@@ -44,10 +56,10 @@ export const projects = [
     },
   {
       slug: 'the-factory',
-      title: 'The Factory',
+      title: 'The Factory — Art Community Concept',
       category: 'Three.js Environments',
       type: '3D Animation',
-      description: 'A personal project for a real-time art community space.',
+      description: 'An independent exploration of a real-time 3D environment conceived as a gathering place for an art community.',
       url: 'https://main.dp50w2vzohoj1.amplifyapp.com/',
       thumbnail: '/images/projects/factory-thumb.jpg',
       gallery: [
@@ -59,10 +71,10 @@ export const projects = [
     },
  {
       slug: '3D-music-room',
-      title: '3D Environment - Music',
+      title: 'MusicSpace — A Place to Listen',
       category: 'Three.js Environments',
-      type: 'Enjoy the GrooveSalad stream',
-      description: 'Chillax in this 3D Music Space.',
+      type: '3D Music Experience',
+      description: 'A browser-based 3D listening environment exploring the relationship between music, atmosphere, and spatial design.',
       url: 'https://main.d1dejm6fbp1yzl.amplifyapp.com/',
       thumbnail: '/images/projects/musicroom-thumb.jpg',
       gallery: [
@@ -71,25 +83,11 @@ export const projects = [
         '/images/projects/musicroom-3.jpg',
       ]
     },
-{
-      slug: '3D-office',
-      title: '3D Environment - Office',
-      category: 'Three.js Environments',
-      type: '3D Environment',
-      description: 'A personal project for a 3D Office.',
-      url: 'https://main.dhvr9i7niybno.amplifyapp.com/',
-      thumbnail: '/images/projects/3D-office-thumb.jpg',
-      gallery: [
-        '/images/projects/3D-office-1.jpg',
-        '/images/projects/3D-office-2.jpg',
-        '/images/projects/3D-office-3.jpg',
-      ]
-    },
     {
       slug: '3D-box',
-      title: '3D Environment - Box',
+      title: 'Beyond the Default Cube',
       category: 'Three.js Environments',
-      type: 'I took the boilerplate 3D box and added SVG texture, sprite sheet animated frames and a custom shader for the emissive texture. Turn down your speakers. I created a quick A.I. generated soundtrack for this one. Zoom in to see the near lossless quality of the texture.',
+      type: '3D Audio-Visual Experiment',
       description: 'My take on the default cube in Three.js.',
       url: 'https://main.d3qvqtwcvdx5r7.amplifyapp.com/',
       thumbnail: '/images/projects/3D-box-thumb.jpg',
@@ -101,25 +99,29 @@ export const projects = [
       ]
     },
     {
-      slug: '3D-book',
-      title: '3D Environment - Book',
-      category: 'Three.js Environments',
-      type: '3D Environment',
-      description: 'An interactive 3D book.',
-      url: 'https://main.d3hnltmtj6c1gu.amplifyapp.com/',
-      thumbnail: '/images/projects/book-interactive-thumb.jpg',
+      slug: 'show-booth-design',
+      title: 'Starter Sportswear - Trade Show Booth Design',
+      category: 'Environmental Design',
+      type: 'I had this unique assignment to collaborate with a trade show booth design company to create a booth for Starter Sportswear. I was responsible for the spatial layout, graphics, and immersive visual and audible elements of the booth. The design aimed to create an engaging and memorable experience for visitors, showcasing Starter´s brand identity and products in a dynamic way.',
+      description: 'Starter Sportswear trade show booth design, including spatial layout, graphics, and immersive visual and audible elements.',
+      url: '',
+      thumbnail: '/images/projects/starterbooth-design-thumb.jpg',
       gallery: [
-        '/images/projects/book-interactive-1.jpg',
-        '/images/projects/book-interactive-2.jpg',
-        '/images/projects/book-interactive-3.jpg',
+        '/images/projects/starterbooth_original1996.jpg',
+        '/images/projects/starterbooth_frontSketch.jpg',
+        '/images/projects/starterbooth_front.jpg',
+        '/images/projects/starterbooth_vin01.jpg',
+        '/images/projects/starterbooth_vin02.jpg',
+        '/images/projects/starterbooth_vin03.jpg',
+        '/images/projects/starterbooth_vin04.jpg',
       ]
     },
-     {
+    {
       slug: 'temple-environment',
-      title: '3D Environment - Temple',
+      title: 'Temple — First-Person Environment',
       category: 'Three.js Environments',
       type: '3D Environment',
-      description: 'A personal project to create a first-person 3D environment.',
+      description: 'An independent environment study exploring a temple setting through first-person navigation.',
       url: 'https://avatar.d1el9mu5mpb6mg.amplifyapp.com/',
       thumbnail: '/images/projects/temple-environment-thumb.jpg',
       gallery: [
@@ -129,11 +131,11 @@ export const projects = [
       ]
     },
     {
-      slug: '3D Model Viewer',
-      title: '3D Model Viewer',
+      slug: '3D-Model-Viewer',
+      title: 'Browser-Based 3D Model Viewer',
       category: 'Three.js Environments',
       type: '3D Environment',
-      description: 'A personal project to create a 3D model viewer.',
+      description: 'An interactive model-viewing experiment exploring how 3D objects can be presented on the web.',
       url: 'https://main.dl7efti2owph.amplifyapp.com/',
       thumbnail: '/images/projects/3D-model-viewer-thumb.jpg',
       gallery: [
@@ -147,7 +149,7 @@ export const projects = [
       title: 'Cigna Broker Website',
       category: 'Website Design',
       type: 'Healthcare Broker Website design',
-      description: 'A healthcare broker website.',
+      description: 'Responsive website redesign for Cigna’s broker resource library, developed within established brand guidelines.',
       thumbnail: '/images/projects/cigna-broker-site-thumb.jpg',
       gallery: [
         '/images/projects/cigna-broker-site-1.jpg',
@@ -161,7 +163,7 @@ export const projects = [
       title: 'San Pellegrino Microsite',
       category: 'Website Design',
       type: 'Brand Microsite',
-      description: 'A brand microsite for San Pellegrino.',
+      description: 'Adapted campaign visuals into a Facebook promotional experience, delivering interface designs, production assets, and development guidance.',
       thumbnail: '/images/projects/sanpellegrino-thumb.jpg',
       gallery: [
         '/images/projects/sanpellegrino-1.jpg',
@@ -172,7 +174,7 @@ export const projects = [
         title: 'Build-A-Bear Workshop',
         category: 'Website Design',
         type: 'Landing Page Design',
-        description: 'Redesign of the landing page for this toy company.',
+        description: 'Landing page redesign for Build-A-Bear Workshop, presented through a series of visual design concepts.',
         thumbnail: '/images/projects/build-a-bear-thumb.jpg',
         gallery: [
           '/images/projects/build-a-bear-1.jpg',
@@ -186,7 +188,7 @@ export const projects = [
       title: 'Digital Promise / Verizon',
       category: 'Website Design',
       type: 'Educator Microsite',
-      description: 'Educator resource microsite introducing tablets to classrooms across the U.S.',
+      description: 'Website design concepts introducing educators to a classroom tablet program and what to expect when implementing it.',
       thumbnail: '/images/projects/digital-promise-thumb.jpg',
       gallery: [
         '/images/projects/digital-promise-1.jpg',
@@ -288,7 +290,7 @@ export const projects = [
       title: 'Perrier Microsite',
       category: 'Website Design',
       type: 'Brand Microsite',
-      description: 'A brand microsite for Perrier.',
+      description: 'Extended an established campaign design across a promotional microsite, mobile layouts, Facebook assets, and digital advertising.',
       thumbnail: '/images/projects/perrier-thumb.jpg',
       gallery: [
         '/images/projects/perrier-1.jpg',
